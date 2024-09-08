@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+
+body {
+    background-image: url("pexels-pixabay-262713.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 40%;
+    height: 55vh;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.container h1 {
+    padding-top: 35px;
+    font-size: 40px;
+    color: black;
+}
+
+#displayquote {
+    width: 100%;
+    height: 25vh;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 70px;
+    margin-top: 40px;
+}
+
+#btn {
+    width: 25%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border: black;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 60%;
+        height: 60vh;
+    }
+
+    .container h1 {
+        font-size: 35px;
+        padding-top: 30px;
+    }
+
+    #displayquote {
+        font-size: 18px;
+        padding: 0 50px;
+        margin-top: 30px;
+    }
+
+    #btn {
+        width: 30%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 75%;
+        height: 65vh;
+    }
+
+    .container h1 {
+        font-size: 32px;
+        padding-top: 40px;
+    }
+
+    #displayquote {
+        font-size: 18px;
+        padding: 0 40px;
+        margin-top: 35px;
+        height: 30vh;
+    }
+
+    #btn {
+        width: 35%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        height: 80vh;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+
+    #displayquote {
+        font-size: 16px;
+        padding: 0 30px;
+        margin-top: 70px;
+        height: 30vh;
+    }
+
+    #btn {
+        width: 40%;
+        font-size: 16px;
+    }
+}
